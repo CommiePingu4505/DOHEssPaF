@@ -5149,38 +5149,34 @@
   },
   "metadata": {
     "files": [
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/dohess/DohessMod.java",
-      "src/main/resources/META-INF/mods.toml",
       "src/main/java/net/mcreator/dohess/network/DohessModVariables.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/dohess/init/DohessModTabs.java",
-      "src/main/java/net/mcreator/dohess/init/DohessModScreens.java",
       "src/main/java/net/mcreator/dohess/init/DohessModMenus.java",
       "src/main/java/net/mcreator/dohess/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/dohess/init/DohessModScreens.java",
       "src/main/java/net/mcreator/dohess/init/DohessModKeyMappings.java",
       "src/main/java/net/mcreator/dohess/init/DohessModBlocks.java",
       "src/main/java/net/mcreator/dohess/init/DohessModBlockEntities.java",
       "src/main/java/net/mcreator/dohess/init/DohessModItems.java",
-      "src/main/java/net/mcreator/dohess/init/DohessModEntities.java",
-      "src/main/java/net/mcreator/dohess/init/DohessModEntityRenderers.java"
+      "src/main/java/net/mcreator/dohess/init/DohessModEntityRenderers.java",
+      "src/main/java/net/mcreator/dohess/init/DohessModEntities.java"
     ]
   },
   "foldersRoot": {
     "name": "~",
     "children": [
       {
-        "name": "Horses",
+        "name": "Medical",
         "children": []
       },
       {
-        "name": "Warps",
-        "children": []
-      },
-      {
-        "name": "Expiremental",
+        "name": "PD",
         "children": [
           {
-            "name": "Pets",
+            "name": "PDMenu",
             "children": []
           }
         ]
@@ -5196,24 +5192,53 @@
                 "children": []
               },
               {
-                "name": "General",
+                "name": "SetRank",
                 "children": []
               },
               {
-                "name": "SetRank",
+                "name": "General",
                 "children": []
               }
             ]
           },
           {
-            "name": "Scouts",
+            "name": "Cadet",
             "children": []
           },
           {
-            "name": "Cadet",
+            "name": "Scouts",
             "children": []
           }
         ]
+      },
+      {
+        "name": "Dgs",
+        "children": []
+      },
+      {
+        "name": "Knife",
+        "children": []
+      },
+      {
+        "name": "Expiremental",
+        "children": [
+          {
+            "name": "Pets",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Plushies",
+        "children": []
+      },
+      {
+        "name": "Horses",
+        "children": []
+      },
+      {
+        "name": "Mod Team",
+        "children": []
       },
       {
         "name": "WOFAdd",
@@ -5229,19 +5254,7 @@
         ]
       },
       {
-        "name": "Knife",
-        "children": []
-      },
-      {
-        "name": "Weapons",
-        "children": []
-      },
-      {
         "name": "Debug",
-        "children": []
-      },
-      {
-        "name": "Medical",
         "children": []
       },
       {
@@ -5249,28 +5262,19 @@
         "children": []
       },
       {
-        "name": "Dgs",
+        "name": "Warps",
         "children": []
       },
       {
-        "name": "Plushies",
+        "name": "Weapons",
         "children": []
       },
       {
-        "name": "PD",
-        "children": [
-          {
-            "name": "PDMenu",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Mod Team",
+        "name": "FridaysANigger",
         "children": []
       },
       {
-        "name": "test123456",
+        "name": "ti",
         "children": []
       },
       {
