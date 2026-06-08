@@ -1,0 +1,7 @@
+{
+  "parent": "dohess:custom/basicknife",
+  "textures": {
+    "0": "dohess:block/basicknife",
+    "particle": "dohess:item/knife"
+  }
+}

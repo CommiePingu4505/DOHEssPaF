@@ -1,0 +1,7 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "particle": "dohess:block/smooth_stone",
+    "texture": "dohess:block/smooth_stone"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "_fv": 79,
+  "_type": "command",
+  "definition": {
+    "commandName": "dohessdebug",
+    "type": "STANDARD",
+    "permissionLevel": "2",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"literal\"><field name=\"name\">resetranks</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">ResetRanks</field></block></statement><next><block type=\"literal\"><field name=\"name\">resetplayersranksandsquad</field><statement name=\"args\"><block type=\"entity\"><field name=\"name\">username</field><field name=\"type\">players</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">ResetRanksSquadsPlayer</field></block></statement></block></statement></block></next></block></next></block></xml>"
+  }
+}

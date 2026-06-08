@@ -1,0 +1,397 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 200,
+    "height": 237,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_gamemode",
+          "text": {
+            "fixedValue": "Gamemode"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Speed",
+          "name": "speedno",
+          "width": 72,
+          "height": 20,
+          "x": 123,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_pd_menu",
+          "text": {
+            "fixedValue": "PD Menu"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 195,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_titans",
+          "text": {
+            "fixedValue": "Titans"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 276,
+          "y": 8,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_speed",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetSpeed"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 123,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_display_immortal",
+          "text": {
+            "fixedValue": "",
+            "name": "DisplayImmortal"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_toggle",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetImmortal"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 123,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetInvisible"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 123,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_display_invisible",
+          "text": {
+            "fixedValue": "",
+            "name": "DisplayInvisible"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty2",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetNameDisplay"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 123,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_display_name_display",
+          "text": {
+            "fixedValue": "",
+            "name": "DisplayNameDisplay"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_displayspeed",
+          "text": {
+            "fixedValue": "",
+            "name": "Displayspeed"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty3",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "PDChangeGamemode"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 123,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_pd_gamemode_display",
+          "text": {
+            "fixedValue": "",
+            "name": "PDGamemodeDisplay"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_allan",
+          "text": "Allan",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GiveAllan"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 231,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ameer_allan",
+          "text": "Ameer Allan",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GiveAmmerAllan"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 231,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_blocky",
+          "text": "Blocky",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GiveBlocky"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 231,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_michelle",
+          "text": "Michelle",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GiveMichelleBlocky"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 231,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_valentina",
+          "text": "Valentina",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GiveValentina"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 231,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_vladlen",
+          "text": "Vladlen",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GiveVladlen"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 231,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_zwei",
+          "text": "Zwei",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GiveZwei"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 231,
+          "y": 188,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_all",
+          "text": "All",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GiveAll"
+          },
+          "width": 36,
+          "height": 20,
+          "x": 231,
+          "y": 215,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_remove",
+          "text": "Remove",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "RemoveAll"
+          },
+          "width": 36,
+          "height": 20,
+          "x": 267,
+          "y": 215,
+          "locked": false
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "PDMenuGUIThisGUIIsOpened"
+    },
+    "onClosed": {
+      "name": "PDMenuGUIWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

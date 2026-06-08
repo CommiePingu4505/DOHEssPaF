@@ -1,0 +1,10 @@
+{
+  "_fv": 79,
+  "_type": "command",
+  "definition": {
+    "commandName": "warp",
+    "type": "STANDARD",
+    "permissionLevel": "No requirement",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"129\" y=\"100\"><next><block type=\"literal\"><field name=\"name\">ShiganshinaDistrict</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">WarpShig</field></block></statement><next><block type=\"literal\"><field name=\"name\">TrostDistrict</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">WarpTrostHQ</field></block></statement><next><block type=\"literal\"><field name=\"name\">TrainingCamp</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">WarpTC</field></block></statement><next><block type=\"literal\"><field name=\"name\">ScoutHQ</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">WarpSlhq</field></block></statement></block></next></block></next></block></next></block></next></block></xml>"
+  }
+}

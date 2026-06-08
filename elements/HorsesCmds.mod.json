@@ -1,0 +1,10 @@
+{
+  "_fv": 79,
+  "_type": "command",
+  "definition": {
+    "commandName": "horse",
+    "type": "STANDARD",
+    "permissionLevel": "No requirement",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"436\" y=\"582\"><next><block type=\"literal\"><field name=\"name\">recall</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">SummonHorse</field></block></statement><next><block type=\"literal\"><field name=\"name\">store</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">StoreHorse</field></block></statement><next><block type=\"literal\"><field name=\"name\">rename</field><statement name=\"args\"><block type=\"message\"><field name=\"name\">namehorse</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">RenameHorse</field></block></statement></block></statement></block></next></block></next></block></next></block><block type=\"literal\" x=\"713\" y=\"1098\"><field name=\"name\">colour</field><statement name=\"args\"><block type=\"literal\"><field name=\"name\">brown</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">SummonHorse</field></block></statement><next><block type=\"literal\"><field name=\"name\">gray</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">SummonHorse</field></block></statement><next><block type=\"literal\"><field name=\"name\">black</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">SummonHorse</field></block></statement></block></next></block></next></block></statement></block></xml>"
+  }
+}

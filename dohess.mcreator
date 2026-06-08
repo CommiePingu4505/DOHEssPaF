@@ -1,0 +1,5291 @@
+{
+  "mod_elements": [
+    {
+      "name": "Bandages",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bandages",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dohess/models/item/bandages.json",
+          "src/main/java/net/mcreator/dohess/item/BandagesItem.java"
+        ]
+      },
+      "path": "~/Medical"
+    },
+    {
+      "name": "BandagesRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bandages_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/BandagesRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Medical"
+    },
+    {
+      "name": "DOHEssentails",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doh_essentails",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "PDOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pd_on",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/PDOnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PD"
+    },
+    {
+      "name": "PDOff",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pd_off",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/PDOffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PD"
+    },
+    {
+      "name": "PDDeatb",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pd_death",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/PDDeatbProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PD"
+    },
+    {
+      "name": "Join",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "join",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/JoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CancelMessage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cancel_message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/CancelMessageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PD"
+    },
+    {
+      "name": "Hesterian",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hesterian",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/item/HesterianItem.java",
+          "src/main/resources/assets/dohess/models/item/hesterian.json"
+        ]
+      },
+      "path": "~/Dgs"
+    },
+    {
+      "name": "Renomorphis",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "renomorphis",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/item/RenomorphisItem.java",
+          "src/main/resources/assets/dohess/models/item/renomorphis.json"
+        ]
+      },
+      "path": "~/Dgs"
+    },
+    {
+      "name": "Calostriopha",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calostriopha",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/item/CalostriophaItem.java",
+          "src/main/resources/assets/dohess/models/item/calostriopha.json"
+        ]
+      },
+      "path": "~/Dgs"
+    },
+    {
+      "name": "Ulivacto",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ulivacto",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/item/UlivactoItem.java",
+          "src/main/resources/assets/dohess/models/item/ulivacto.json"
+        ]
+      },
+      "path": "~/Dgs"
+    },
+    {
+      "name": "SelfHarm",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "self_harm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SelfHarmProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Knife"
+    },
+    {
+      "name": "SetKnifeModel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_knife_model",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetKnifeModelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Knife"
+    },
+    {
+      "name": "Knife",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knife",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dohess/models/item/knife.json",
+          "src/main/java/net/mcreator/dohess/item/KnifeItem.java"
+        ]
+      },
+      "path": "~/Knife"
+    },
+    {
+      "name": "PD",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/PDCommand.java"
+        ]
+      },
+      "path": "~/PD"
+    },
+    {
+      "name": "HorsesCmds",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "horses_cmds",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/HorsesCmdsCommand.java"
+        ]
+      },
+      "path": "~/Horses"
+    },
+    {
+      "name": "CallHorse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_horse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/CallHorseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Horses"
+    },
+    {
+      "name": "CallHorseK",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "call_horse_k",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/network/CallHorseKMessage.java"
+        ]
+      },
+      "path": "~/Horses"
+    },
+    {
+      "name": "BowieKnife",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bowie_knife",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dohess/models/item/bowie_knife.json",
+          "src/main/java/net/mcreator/dohess/item/BowieKnifeItem.java"
+        ]
+      },
+      "path": "~/Knife"
+    },
+    {
+      "name": "ModCmds",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mod_cmds",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/ModCmdsCommand.java"
+        ]
+      },
+      "path": "~/Mod Team"
+    },
+    {
+      "name": "KickPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kick_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/KickPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mod Team"
+    },
+    {
+      "name": "BanPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ban_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/BanPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mod Team"
+    },
+    {
+      "name": "ViewInv",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "view_inv",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ViewInvProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mod Team"
+    },
+    {
+      "name": "ViewEnder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "view_ender",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ViewEnderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mod Team"
+    },
+    {
+      "name": "GMCreative",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gm_creative",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GMCreativeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mod Team"
+    },
+    {
+      "name": "GMSurvival",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gm_survival",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GMSurvivalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mod Team"
+    },
+    {
+      "name": "GMAdventure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gm_adventure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GMAdventureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mod Team"
+    },
+    {
+      "name": "GMSpec",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gm_spec",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GMSpecProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mod Team"
+    },
+    {
+      "name": "SpeedHorses",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed_horses",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SpeedHorsesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ManageServer"
+    },
+    {
+      "name": "SummonHorse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_horse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SummonHorseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Horses"
+    },
+    {
+      "name": "RenameHorse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rename_horse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/RenameHorseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Horses"
+    },
+    {
+      "name": "StoreHorse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "store_horse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/StoreHorseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Horses"
+    },
+    {
+      "name": "DistantHorses",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distant_horses",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/DistantHorsesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ManageServer"
+    },
+    {
+      "name": "ToggletTab",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "togglet_tab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ToggletTabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PD"
+    },
+    {
+      "name": "SetPDDeathMessage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_pd_death_message",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetPDDeathMessageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PD"
+    },
+    {
+      "name": "Hidenames",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hidenames",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/HidenamesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members"
+    },
+    {
+      "name": "ManageCadetsEquipment",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manage_cadets_equipment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/network/ManageCadetsEquipmentButtonMessage.java",
+          "src/main/java/net/mcreator/dohess/world/inventory/ManageCadetsEquipmentMenu.java",
+          "src/main/java/net/mcreator/dohess/client/gui/ManageCadetsEquipmentScreen.java"
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "OpenMenu",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/OpenMenuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "SetItems",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_items",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetItemsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "SetTCI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_tci",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetTCIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "SetCadetSquad",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_cadet_squad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetCadetSquadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "SetCadetRank",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_cadet_rank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetCadetRankProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "TpToCadet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_to_cadet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/TpToCadetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "TpToMe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_to_me",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/TpToMeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "EquipmentODM",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equipment_odm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/EquipmentODMProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "EquipmentBasic",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equipment_basic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/EquipmentBasicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "EquipmentJacket",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equipment_jacket",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/EquipmentJacketProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "EquipmentCape",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equipment_cape",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/EquipmentCapeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "EquipmentFormal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "equipment_formal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/EquipmentFormalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "ScoreboardCreate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scoreboard_create",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ScoreboardCreateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "ScoreboardScore",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scoreboard_score",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ScoreboardScoreProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/TestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WOFAdd/GasCart"
+    },
+    {
+      "name": "GasCart",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gas_cart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/client/renderer/GasCartRenderer.java",
+          "src/main/java/net/mcreator/dohess/entity/GasCartEntity.java",
+          "src/main/resources/assets/dohess/models/item/gas_cart_spawn_egg.json"
+        ]
+      },
+      "path": "~/WOFAdd/GasCart"
+    },
+    {
+      "name": "GasCartSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gas_cart_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GasCartSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/WOFAdd/GasCart"
+    },
+    {
+      "name": "GasCartTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gas_cart_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GasCartTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/WOFAdd/GasCart"
+    },
+    {
+      "name": "Player",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/PlayerCommand.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank"
+    },
+    {
+      "name": "PlayerRankSquadSystem",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_rank_squad_system",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/network/PlayerRankSquadSystemButtonMessage.java",
+          "src/main/java/net/mcreator/dohess/client/gui/PlayerRankSquadSystemScreen.java",
+          "src/main/java/net/mcreator/dohess/world/inventory/PlayerRankSquadSystemMenu.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank"
+    },
+    {
+      "name": "OpenGUIRankSquad",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_gui_rank_squad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/OpenGUIRankSquadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank"
+    },
+    {
+      "name": "ReturnPlayerGUIRankSquad",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_player_gui_rank_squad",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ReturnPlayerGUIRankSquadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank"
+    },
+    {
+      "name": "ResetRankSquad",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_rank_squad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ResetRankSquadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank"
+    },
+    {
+      "name": "ShowRank1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_1",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "Debug",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/DebugCommand.java"
+        ]
+      },
+      "path": "~/Debug"
+    },
+    {
+      "name": "ResetRanks",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_ranks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ResetRanksProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Debug"
+    },
+    {
+      "name": "Manageregiment",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manageregiment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/ManageregimentCommand.java"
+        ]
+      },
+      "path": "~/Manage Members"
+    },
+    {
+      "name": "ManageRegimentRank",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manage_regiment_rank",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ManageRegimentRankProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank"
+    },
+    {
+      "name": "ResetRanksSquadsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_ranks_squads_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ResetRanksSquadsPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      },
+      "path": "~/Debug"
+    },
+    {
+      "name": "SetRank1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "ShowRank2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "SetRank2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_6",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_8",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank9",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_9",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank10",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_10",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank10Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank11",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_11",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank11Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank12",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_12",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank12Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank13",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_13",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank13Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank14",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_14",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank14Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank15",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_15",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank15Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank16",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_16",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank16Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank17",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_17",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank17Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank18",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_18",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank18Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank19",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_19",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank19Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetRank20",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_rank_20",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetRank20Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "ShowRank3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_3",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_4",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_5",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_6",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_7",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_8",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank9",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_9",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank10",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_10",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank10Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank11",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_11",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank11Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank12",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_12",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank12Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank13",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_13",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank13Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank14",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_14",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank14Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank15",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_15",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank15Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank16",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_16",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank16Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank17",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_17",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank17Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank18",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_18",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank18Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank19",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_19",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank19Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowRank20",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_rank_20",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowRank20Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowSL1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_sl_1",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowSL1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ManageRegimentSLSquad",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manage_regiment_sl_squad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ManageRegimentSLSquadProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank"
+    },
+    {
+      "name": "SetSL1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_sl_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetSL1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetSL2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_sl_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetSL2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetSL3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_sl_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetSL3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetSL4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_sl_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetSL4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetSL5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_sl_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetSL5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetSL6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_sl_6",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetSL6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetSL7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_sl_7",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetSL7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "SetSL8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_sl_8",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetSL8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/SetRank"
+    },
+    {
+      "name": "ShowSL2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_sl_2",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowSL2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowSL3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_sl_3",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowSL3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowSL4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_sl_4",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowSL4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowSL5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_sl_5",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowSL5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowSL6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_sl_6",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowSL6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowSL7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_sl_7",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowSL7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "ShowSL8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_sl_8",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowSL8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/ShowButton"
+    },
+    {
+      "name": "Leave",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leave",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/LeaveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetCadet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_cadet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetCadetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "Tci",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tci",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/TciCommand.java"
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "SetCadetScout",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_cadet_scout",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetCadetScoutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "TCIChest",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tci_chest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dohess/loot_tables/blocks/tci_chest.json",
+          "src/main/resources/assets/dohess/models/item/tci_chest.json",
+          "src/main/resources/assets/dohess/models/block/tci_chest.json",
+          "src/main/resources/assets/dohess/blockstates/tci_chest.json",
+          "src/main/java/net/mcreator/dohess/block/TCIChestBlock.java",
+          "src/main/java/net/mcreator/dohess/block/entity/TCIChestBlockEntity.java"
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "TCIChestGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tci_chest_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/TCIChestGUIWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "TCIChestGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tci_chest_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/client/gui/TCIChestGUIScreen.java",
+          "src/main/java/net/mcreator/dohess/world/inventory/TCIChestGUIMenu.java"
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "TCIChestGUISet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tci_chest_gui_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/TCIChestGUISetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "ShowName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_name",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ShowNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "TCIDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tci_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dohess/loot_tables/blocks/tci_door.json",
+          "src/main/resources/assets/dohess/models/item/tci_door.json",
+          "src/main/java/net/mcreator/dohess/block/TCIDoorBlock.java",
+          "src/main/resources/assets/dohess/models/block/tci_door_top.json",
+          "src/main/resources/assets/dohess/blockstates/tci_door.json",
+          "src/main/resources/assets/dohess/models/block/tci_door_bottom_hinge.json",
+          "src/main/resources/assets/dohess/models/block/tci_door_top_hinge.json",
+          "src/main/resources/assets/dohess/models/block/tci_door_bottom.json"
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "TCIDoorOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tci_door_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/TCIDoorOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "TCIButton",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tci_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dohess/loot_tables/blocks/tci_button.json",
+          "src/main/resources/assets/dohess/models/item/tci_button.json",
+          "src/main/resources/assets/dohess/models/block/tci_button_pressed.json",
+          "src/main/resources/assets/dohess/models/block/tci_button_inventory.json",
+          "src/main/resources/assets/dohess/blockstates/tci_button.json",
+          "src/main/java/net/mcreator/dohess/block/TCIButtonBlock.java",
+          "src/main/resources/assets/dohess/models/block/tci_button.json"
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "TCIButtonOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tci_button_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/TCIButtonOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "RenameCadetHorse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rename_cadet_horse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/RenameCadetHorseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "PDMenuGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pd_menu_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/network/PDMenuGUIButtonMessage.java",
+          "src/main/java/net/mcreator/dohess/world/inventory/PDMenuGUIMenu.java",
+          "src/main/java/net/mcreator/dohess/client/gui/PDMenuGUIScreen.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "Pdmenu",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pdmenu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/PdmenuCommand.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "OpenPDMenuGUIO",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_pd_menu_guio",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/OpenPDMenuGUIOProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "DisplayImmortal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_immortal",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/DisplayImmortalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SetImmortal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_immortal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetImmortalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "PDMenuPlayerTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pd_menu_player_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/PDMenuPlayerTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "DisplayInvisible",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_invisible",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/DisplayInvisibleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SetInvisible",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_invisible",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetInvisibleProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SetNameDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_name_display",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetNameDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "DisplayNameDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_name_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/DisplayNameDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SetSpeed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_speed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetSpeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "Displayspeed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "displayspeed",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/DisplayspeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "PDMenuGUIThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pd_menu_gui_this_gui_is_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/PDMenuGUIThisGUIIsOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "PDMenuGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pd_menu_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/PDMenuGUIWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "PDGamemodeDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pd_gamemode_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/PDGamemodeDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "PDChangeGamemode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pd_change_gamemode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/PDChangeGamemodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SpawnAllan",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_allan",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dohess/models/item/spawn_allan.json",
+          "src/main/java/net/mcreator/dohess/item/SpawnAllanItem.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SpawnAmmerAllan",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_ammer_allan",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/item/SpawnAmmerAllanItem.java",
+          "src/main/resources/assets/dohess/models/item/spawn_ammer_allan.json"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SpawnBlocky",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_blocky",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/item/SpawnBlockyItem.java",
+          "src/main/resources/assets/dohess/models/item/spawn_blocky.json"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SpawnMichelleBlocky",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_michelle_blocky",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/item/SpawnMichelleBlockyItem.java",
+          "src/main/resources/assets/dohess/models/item/spawn_michelle_blocky.json"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SpawnValentina",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_valentina",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/item/SpawnValentinaItem.java",
+          "src/main/resources/assets/dohess/models/item/spawn_valentina.json"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SpawnVladlen",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_vladlen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/item/SpawnVladlenItem.java",
+          "src/main/resources/assets/dohess/models/item/spawn_vladlen.json"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SpawnZwei",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_zwei",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dohess/models/item/spawn_zwei.json",
+          "src/main/java/net/mcreator/dohess/item/SpawnZweiItem.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "GiveAllan",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_allan",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GiveAllanProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "GiveAmmerAllan",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_ammer_allan",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GiveAmmerAllanProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "GiveBlocky",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_blocky",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GiveBlockyProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "GiveMichelleBlocky",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_michelle_blocky",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GiveMichelleBlockyProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "GiveValentina",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_valentina",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GiveValentinaProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "GiveVladlen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_vladlen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GiveVladlenProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "GiveZwei",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_zwei",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GiveZweiProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "GiveAll",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_all",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/GiveAllProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "RemoveAll",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_all",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/RemoveAllProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SpawnAllanRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_allan_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SpawnAllanRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SpawnAmmerAllanRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_ammer_allan_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SpawnAmmerAllanRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SpawnBlockyRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_blocky_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SpawnBlockyRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SpawnMichelleBlockyRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_michelle_blocky_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SpawnMichelleBlockyRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SpawnValentinaRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_valentina_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SpawnValentinaRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SpawnVladlenRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_vladlen_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SpawnVladlenRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SpawnZweiRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_zwei_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SpawnZweiRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "GeneralManagingMenu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "general_managing_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/network/GeneralManagingMenuButtonMessage.java",
+          "src/main/java/net/mcreator/dohess/world/inventory/GeneralManagingMenuMenu.java",
+          "src/main/java/net/mcreator/dohess/client/gui/GeneralManagingMenuScreen.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/General"
+    },
+    {
+      "name": "OpenGeneralMenu",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_general_menu",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/OpenGeneralMenuProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/General"
+    },
+    {
+      "name": "ReturnPDManagement",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_pd_management",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ReturnPDManagementProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/General"
+    },
+    {
+      "name": "SetPDTeam",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_pd_team",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetPDTeamProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/General"
+    },
+    {
+      "name": "ReturnTCI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_tci",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ReturnTCIProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/General"
+    },
+    {
+      "name": "SetTCITeam",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_tci_team",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetTCITeamProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/General"
+    },
+    {
+      "name": "SetColour",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_colour",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetColourProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/General"
+    },
+    {
+      "name": "ReturnColour",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_colour",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ReturnColourProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/General"
+    },
+    {
+      "name": "SetUsernameShown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_username_shown",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetUsernameShownProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/General"
+    },
+    {
+      "name": "ReturnName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "return_name",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/ReturnNameProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/General"
+    },
+    {
+      "name": "SetCustomRank",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_custom_rank",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetCustomRankProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/General"
+    },
+    {
+      "name": "SetCustomSquad",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_custom_squad",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetCustomSquadProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/General"
+    },
+    {
+      "name": "SetColourBack",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_colour_back",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetColourBackProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Squad And Rank/General"
+    },
+    {
+      "name": "Manageserver",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manageserver",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/ManageserverCommand.java"
+        ]
+      },
+      "path": "~/ManageServer"
+    },
+    {
+      "name": "Warp",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dohess/command/WarpCommand.java"
+        ]
+      },
+      "path": "~/Warps"
+    },
+    {
+      "name": "WarpTC",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warp_tc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/WarpTCProcedure.java"
+        ]
+      },
+      "path": "~/Warps"
+    },
+    {
+      "name": "SetWarpTC",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_warp_tc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetWarpTCProcedure.java"
+        ]
+      },
+      "path": "~/ManageServer"
+    },
+    {
+      "name": "WarpTrostHQ",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warp_trost_hq",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/WarpTrostHQProcedure.java"
+        ]
+      },
+      "path": "~/Warps"
+    },
+    {
+      "name": "WarpShig",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warp_shig",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/WarpShigProcedure.java"
+        ]
+      },
+      "path": "~/Warps"
+    },
+    {
+      "name": "WarpSlhq",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warp_slhq",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/WarpSlhqProcedure.java"
+        ]
+      },
+      "path": "~/Warps"
+    },
+    {
+      "name": "SetWarpTrost",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_warp_trost",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetWarpTrostProcedure.java"
+        ]
+      },
+      "path": "~/ManageServer"
+    },
+    {
+      "name": "SetWarpSLHQ",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_warp_slhq",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetWarpSLHQProcedure.java"
+        ]
+      },
+      "path": "~/ManageServer"
+    },
+    {
+      "name": "SetWarpShig",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_warp_shig",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetWarpShigProcedure.java"
+        ]
+      },
+      "path": "~/ManageServer"
+    },
+    {
+      "name": "BladeBreak",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blade_break",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/BladeBreakProcedure.java"
+        ]
+      },
+      "path": "~/WOFAdd/Blade"
+    },
+    {
+      "name": "TurnNameOffOn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "turn_name_off_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/TurnNameOffOnProcedure.java"
+        ]
+      },
+      "path": "~/PD/PDMenu"
+    },
+    {
+      "name": "SetDmg",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_dmg",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/SetDmgProcedure.java"
+        ]
+      },
+      "path": "~/ManageServer"
+    },
+    {
+      "name": "CadetCreateTimer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cadet_create_timer",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/CadetCreateTimerProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "CadetTimerDown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cadet_timer_down",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/CadetTimerDownProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "CadetTimerPause",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cadet_timer_pause",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/CadetTimerPauseProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    },
+    {
+      "name": "CadetTimerStop",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cadet_timer_stop",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/dohess/procedures/CadetTimerStopProcedure.java"
+        ]
+      },
+      "path": "~/Manage Members/Cadet"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "ArmyPants",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "ArmyShoes",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "CadetCape",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "CadetFormal",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "CadetJacket",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "CadetNo1",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "CadetNo2",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "CadetNo3",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "CadetNo4",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "CadetNo5",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "CadetNo6",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "CadetNo7",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "CadetNo8",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "CadetRank",
+      "type": "string",
+      "scope": "world",
+      "value": "\"\""
+    },
+    {
+      "name": "CadetSlot1",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "CadetSlot2",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "CadetSlot3",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "CadetSlot4",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "CadetSlot5",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "CadetSlot6",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "CadetSlot7",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "CadetSlot8",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "CadetSquad",
+      "type": "string",
+      "scope": "world",
+      "value": ""
+    },
+    {
+      "name": "ChangingRankSquad",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "DeathMessageAnnounce",
+      "type": "string",
+      "scope": "world",
+      "value": ""
+    },
+    {
+      "name": "DeathMessageOnDeath",
+      "type": "string",
+      "scope": "world",
+      "value": ""
+    },
+    {
+      "name": "Gov1",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "Gov2",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "Gov3",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "Gov4",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "Gov5",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "Gov6",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "Gov7",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "Gov8",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "Gov9",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "HorseColour",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "HorseDistant",
+      "type": "number",
+      "scope": "world",
+      "value": "50.0"
+    },
+    {
+      "name": "HorseID",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "HorseName",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "No Name"
+    },
+    {
+      "name": "HorsesPEED",
+      "type": "number",
+      "scope": "world",
+      "value": "0.5"
+    },
+    {
+      "name": "MCPlayerColour",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "white"
+    },
+    {
+      "name": "MCPlayerRank",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "MCPlayerRankPri",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "z"
+    },
+    {
+      "name": "MCPlayerSquad",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "MCPlayerSquadPri",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "z"
+    },
+    {
+      "name": "ModTeam",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "NameVisibility",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "ODMGear",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "OfflinePlayersRank",
+      "type": "string",
+      "scope": "world",
+      "value": ""
+    },
+    {
+      "name": "PD",
+      "type": "number",
+      "scope": "world",
+      "value": "0.0"
+    },
+    {
+      "name": "PDImmortal",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "PDInvisibility",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "PDManager",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "PDSpeed",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "PDSpeedNO",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "PlayerMessage",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "PlayerUser",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Rank1",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank10",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank11",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank12",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank13",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank14",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank15",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank16",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank17",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank18",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank19",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank2",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank20",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank3",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank4",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank5",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank6",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank7",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank8",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "Rank9",
+      "type": "string",
+      "scope": "world",
+      "value": "{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]"
+    },
+    {
+      "name": "SL1",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "SL2",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "SL3",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "SL4",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "SL5",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "SL6",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "SL7",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "SL8",
+      "type": "string",
+      "scope": "world",
+      "value": "[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},"
+    },
+    {
+      "name": "SLCape",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "SLFormal",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "SLJacket",
+      "type": "itemstack",
+      "scope": "world",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "TCI",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "TCIHighlight",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "WrapTrost",
+      "type": "string",
+      "scope": "world",
+      "value": "\"\""
+    },
+    {
+      "name": "VisableName",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    },
+    {
+      "name": "WarpShig",
+      "type": "string",
+      "scope": "world",
+      "value": "\"\""
+    },
+    {
+      "name": "WarpSLHQ",
+      "type": "string",
+      "scope": "world",
+      "value": "\"\""
+    },
+    {
+      "name": "WarpTc",
+      "type": "string",
+      "scope": "world",
+      "value": "\"\""
+    },
+    {
+      "name": "BladeDamage",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "PauseTimerCadets",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "CadetTimerNumber",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:minecraft:enchantable/durability": []
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.dohess.rank_edit.slot": "Slot (1-24)",
+      "gui.dohess.sl_squads.tooltip_empty22": "",
+      "gui.dohess.sl_squads.tooltip_empty21": "",
+      "item.dohess.renomorphis": "Renomorphis",
+      "gui.dohess.pd_menu_gui.button_empty3": "",
+      "item.dohess.spawn_allan": "Spawn Allan",
+      "gui.dohess.sl_squads.tooltip_empty20": "",
+      "gui.dohess.ranks.button_empty22": "",
+      "gui.dohess.rank_pick_sl_edit.tooltip_item_display": "Item Display",
+      "gui.dohess.ranks.button_empty23": "",
+      "gui.dohess.ranks.button_empty20": "",
+      "gui.dohess.pd_menu_gui.button_empty2": "",
+      "gui.dohess.ranks.button_empty21": "",
+      "gui.dohess.pd_menu_gui.button_empty1": "",
+      "gui.dohess.rank_edit.label_sg_9_17": "SG: 9 - 16",
+      "gui.dohess.ranks.label_7": "7",
+      "gui.dohess.player_rank_squad_system.button_empty29": "",
+      "gui.dohess.ranks.label_8": "8",
+      "gui.dohess.player_rank_squad_system.button_empty28": "",
+      "item.dohess.spawn_vladlen": "Spawn Vladlen",
+      "gui.dohess.ranks.label_5": "5",
+      "gui.dohess.ranks.label_6": "6",
+      "gui.dohess.pd_menu_gui.button_spectator": "Spectator",
+      "gui.dohess.player_rank_squad_system.button_empty4": "",
+      "gui.dohess.player_rank_squad_system.button_empty21": "",
+      "gui.dohess.pd_menu_gui.flying": "flying",
+      "gui.dohess.player_rank_squad_system.button_empty5": "",
+      "gui.dohess.player_rank_squad_system.button_empty20": "",
+      "gui.dohess.tci_chest_gui.uuid": "uuid",
+      "gui.dohess.player_rank_squad_system.button_empty2": "",
+      "gui.dohess.player_rank_squad_system.button_empty23": "",
+      "gui.dohess.player_rank_squad_system.button_empty3": "",
+      "gui.dohess.sl_squads.tooltip_empty23": "",
+      "gui.dohess.player_rank_squad_system.button_empty22": "",
+      "gui.dohess.player_rank_squad_system.button_empty8": "",
+      "gui.dohess.that_players_inventorys.therename": "Username",
+      "gui.dohess.player_rank_squad_system.button_empty25": "",
+      "gui.dohess.player_rank_squad_system.button_empty9": "",
+      "gui.dohess.player_rank_squad_system.button_empty24": "",
+      "gui.dohess.player_rank_squad_system.button_empty6": "",
+      "gui.dohess.player_rank_squad_system.button_empty27": "",
+      "gui.dohess.player_rank_squad_system.button_empty7": "",
+      "gui.dohess.player_rank_squad_system.button_empty26": "",
+      "gui.dohess.rank_pick_in_general.label_18": "18",
+      "gui.dohess.rank_pick_in_general.label_15": "15",
+      "gui.dohess.rank_pick_in_general.label_14": "14",
+      "gui.dohess.rank_pick_in_general.label_17": "17",
+      "gui.dohess.rank_pick_in_general.label_16": "16",
+      "gui.dohess.pd_menu_gui.button_toggle": "",
+      "gui.dohess.pd_menu_gui.label_gamemode": "Gamemode",
+      "gui.dohess.manage_cadets_equipment.label_cape": "Cape",
+      "itemGroup.dohess.doh_essentails": "DOH Essentails",
+      "gui.dohess.player_rank_squad_system.button_empty18": "",
+      "gui.dohess.that_players_inventorys.button_a": "A",
+      "gui.dohess.player_rank_squad_system.button_empty17": "",
+      "gui.dohess.player_rank_squad_system.button_empty19": "",
+      "gui.dohess.tci_chest_gui.button_setuuid": "SetUser",
+      "gui.dohess.manage_cadets_equipment.label_shoes": "Shoes",
+      "gui.dohess.rank_pick_in_general.label_11": "11",
+      "gui.dohess.player_rank_squad_system.button_empty10": "",
+      "item.dohess.hesterian": "Hesterian",
+      "gui.dohess.rank_pick_in_general.label_10": "10",
+      "gui.dohess.rank_pick_in_general.label_13": "13",
+      "gui.dohess.player_rank_squad_system.button_empty12": "",
+      "item.dohess.spawn_blocky": "Spawn Blocky",
+      "gui.dohess.rank_pick_in_general.label_12": "12",
+      "gui.dohess.player_rank_squad_system.button_empty11": "",
+      "gui.dohess.player_rank_squad_system.button_empty14": "",
+      "gui.dohess.player_rank_squad_system.button_empty13": "",
+      "item.dohess.spawn_ammer_allan": "Spawn Ammer Allan",
+      "gui.dohess.player_rank_squad_system.button_empty16": "",
+      "gui.dohess.player_rank_squad_system.button_empty15": "",
+      "gui.dohess.pd_menu_gui.username": "username",
+      "item_group.dohess.doh_essentails": "DOH Essentails",
+      "gui.dohess.manage_cadets_equipment.e2": "1",
+      "gui.dohess.manage_cadets_equipment.e1": "1",
+      "gui.dohess.rank_pick_sl_edit.one": "two",
+      "gui.dohess.pd_menu_gui.button_empty": "",
+      "gui.dohess.manage_cadets_equipment.label_extra": "Extra",
+      "gui.dohess.rank_pick_sl.button_done": "Done",
+      "gui.dohess.pd_menu_gui.button_creative": "Survival",
+      "item.dohess.spawn_zwei": "Spawn Zwei",
+      "gui.dohess.sl_squads.tooltip_empty11": "",
+      "gui.dohess.sl_squads.tooltip_empty10": "",
+      "gui.dohess.player_rank_squad_system.button_empty1": "",
+      "block.dohess.tci_chest": "TCI Chest",
+      "gui.dohess.ranks.label_mp": "MP",
+      "gui.dohess.rank_edit.label_mp_17_24": "MP: 17 - 24",
+      "gui.dohess.rank_pick_sl.test": "Username",
+      "gui.dohess.manage_cadets_equipment.label_cdt": "Cdt",
+      "gui.dohess.manage_cadets_equipment.label_odm_gear": "ODM Gear",
+      "gui.dohess.sl_squads.tooltip_empty15": "",
+      "gui.dohess.sl_squads.tooltip_empty14": "",
+      "gui.dohess.sl_squads.tooltip_empty13": "",
+      "gui.dohess.sl_squads.tooltip_empty12": "",
+      "gui.dohess.sl_squads.tooltip_empty19": "",
+      "gui.dohess.sl_squads.tooltip_empty18": "",
+      "gui.dohess.sl_squads.tooltip_empty17": "",
+      "gui.dohess.sl_squads.tooltip_empty16": "",
+      "item.dohess.bandages": "Medical Kit",
+      "gui.dohess.pd_menu_gui.speedno": "Speed",
+      "item.dohess.knife": "Knife",
+      "gui.dohess.ranks.label_24": "24",
+      "gui.dohess.ranks.label_23": "23",
+      "gui.dohess.ranks.label_22": "22",
+      "gui.dohess.that_players_inventorys.button_done": "View",
+      "gui.dohess.ranks.label_21": "21",
+      "item.dohess.ulivacto": "Ulivacto",
+      "gui.dohess.pd_menu_gui.immortal": "immortal",
+      "gui.dohess.rank_edit.sn": "Squad Name",
+      "gui.dohess.rank_edit.label_sl_1_8": "SL: 1 - 8",
+      "gui.dohess.sl_squads.tooltip_empty8": "",
+      "gui.dohess.sl_squads.tooltip_empty7": "",
+      "gui.dohess.ranks.label_sl": "SL",
+      "gui.dohess.sl_squads.tooltip_empty9": "",
+      "gui.dohess.ranks.label_sg": "SG",
+      "gui.dohess.sl_squads.tooltip_empty2": "",
+      "gui.dohess.sl_squads.tooltip_empty1": "",
+      "gui.dohess.sl_squads.tooltip_empty4": "",
+      "gui.dohess.manage_cadets_equipment.label_formal": "Formal",
+      "gui.dohess.sl_squads.tooltip_empty3": "",
+      "gui.dohess.pd_menu_gui.button_speed": "",
+      "gui.dohess.sl_squads.tooltip_empty6": "",
+      "gui.dohess.sl_squads.tooltip_empty5": "",
+      "gui.dohess.manage_cadets_equipment.button_done": "Done",
+      "gui.dohess.manage_cadets_equipment.label_jacket": "Jacket",
+      "gui.dohess.manage_cadets_equipment.label_1": "1",
+      "gui.dohess.manage_cadets_equipment.label_2": "2",
+      "gui.dohess.manage_cadets_equipment.label_3": "3",
+      "gui.dohess.manage_cadets_equipment.label_4": "4",
+      "gui.dohess.manage_cadets_equipment.label_cadet_menu": "Cadet Menu",
+      "item.dohess.spawn_michelle_blocky": "Spawn Michelle Blocky",
+      "block.dohess.tci_door": "TCI Door",
+      "item.dohess.knife.description_0": "Right-Click \u003d 2 Damage to self",
+      "gui.dohess.pd_menu_gui.label_pd_menu": "PD Menu",
+      "item.dohess.knife.description_1": "Right-Click \u003d 1 Damage to offhand (Firstaid)",
+      "gui.dohess.rank_pick_sl_edit.five": "sixe",
+      "key.dohess.call_horse_k": "Call Horse",
+      "gui.dohess.manage_cadets_equipment.label_5": "5",
+      "gui.dohess.manage_cadets_equipment.label_uniform": "Uniform",
+      "gui.dohess.manage_cadets_equipment.label_6": "6",
+      "gui.dohess.manage_cadets_equipment.label_7": "7",
+      "gui.dohess.manage_cadets_equipment.label_8": "8",
+      "block.dohess.tci_button": "TCI Button",
+      "gui.dohess.pd_menu_gui.speed": "speed",
+      "gui.dohess.manage_cadets_equipment.label_sl": "SL",
+      "item.dohess.spawn_valentina": "Spawn Valentina",
+      "entity.dohess.gas_cart": "Gas Cart",
+      "item.dohess.bowie_knife": "Bowie Knife Template",
+      "gui.dohess.player_rank_squad_system.button_empty": "",
+      "item.dohess.calostriopha": "Calostriopha",
+      "item.dohess.gas_cart_spawn_egg": "Gas Cart Spawn Egg",
+      "gui.dohess.player_rank_squad_system.label_ranks": "Ranks",
+      "gui.dohess.player_rank_squad_system.label_squads": "Squads",
+      "gui.dohess.rank_pick_sl_edit.button_4": "4",
+      "gui.dohess.rank_pick_sl_edit.button_3": "3",
+      "gui.dohess.rank_pick_sl_edit.button_2": "2",
+      "gui.dohess.rank_pick_sl_edit.button_1": "1",
+      "gui.dohess.pd_menu_gui.invisible": "invisible",
+      "gui.dohess.rank_pick_sl_edit.button_8": "8",
+      "gui.dohess.rank_pick_sl_edit.button_7": "7",
+      "gui.dohess.rank_pick_sl_edit.button_6": "6",
+      "gui.dohess.rank_pick_sl_edit.button_5": "5",
+      "gui.dohess.rank_pick_sl_edit.tooltip_item_display1": "Item Display",
+      "gui.dohess.rank_pick_sl_edit.button_9": "9",
+      "gui.dohess.ranks.button_empty15": "",
+      "gui.dohess.rank_edit.hc": "Hex Code (without the #)",
+      "gui.dohess.ranks.button_empty14": "",
+      "item.dohess.bandages.description_0": "Shift-Clicking \u003d Heals Self",
+      "gui.dohess.manage_cadets_equipment.label_pants": "Pants",
+      "gui.dohess.manage_cadets_equipment.label_equipment": "Equipment",
+      "gui.dohess.pd_menu_gui.label_titans": "Titans",
+      "item.dohess.bandages.description_2": "Heals: Hearts",
+      "item.dohess.bandages.description_1": "Clicking \u003d Heals Player Your Looking At",
+      "gui.dohess.rank_pick_sl_edit.three": "four",
+      "gui.dohess.pd_menu_gui.button_zwei": "Zwei",
+      "gui.dohess.pd_menu_gui.button_all": "All",
+      "gui.dohess.pd_menu_gui.button_remove": "Remove",
+      "gui.dohess.pd_menu_gui.button_blocky": "Blocky",
+      "gui.dohess.pd_menu_gui.button_michelle": "Michelle",
+      "gui.dohess.pd_menu_gui.button_ameer_allan": "Ameer Allan",
+      "gui.dohess.pd_menu_gui.button_valentina": "Valentina",
+      "gui.dohess.pd_menu_gui.button_allan": "Allan",
+      "gui.dohess.pd_menu_gui.button_vladlen": "Vladlen",
+      "gui.dohess.general_managing_menu.button_empty": "",
+      "gui.dohess.general_managing_menu.label_teams": "Teams",
+      "gui.dohess.general_managing_menu.button_empty1": "",
+      "gui.dohess.general_managing_menu.button_empty2": "\u003c",
+      "gui.dohess.general_managing_menu.label_name_display": "Name Display",
+      "gui.dohess.general_managing_menu.button_empty3": "",
+      "gui.dohess.general_managing_menu.rank": "",
+      "gui.dohess.general_managing_menu.hexrank": "",
+      "gui.dohess.general_managing_menu.button_ok1": "OK",
+      "gui.dohess.general_managing_menu.button_ok": "OK",
+      "gui.dohess.general_managing_menu.button_empty4": "\u003e",
+      "gui.dohess.general_managing_menu.squad": "",
+      "gui.dohess.general_managing_menu.hexsquad": "",
+      "gui.dohess.general_managing_menu.priorityrank": "",
+      "gui.dohess.general_managing_menu.prioritysquad": "",
+      "gui.dohess.general_managing_menu.label_hexcode": "Hexcode",
+      "gui.dohess.general_managing_menu.label_squad": "Squad",
+      "gui.dohess.general_managing_menu.label_rank": "Rank",
+      "gui.dohess.general_managing_menu.label_p": "P",
+      "gui.dohess.general_managing_menu.label_p1": "P",
+      "gui.dohess.general_managing_menu.label_hexcode1": "Hexcode"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/dohess/DohessMod.java",
+      "src/main/resources/META-INF/mods.toml",
+      "src/main/java/net/mcreator/dohess/network/DohessModVariables.java",
+      "src/main/java/net/mcreator/dohess/init/DohessModTabs.java",
+      "src/main/java/net/mcreator/dohess/init/DohessModScreens.java",
+      "src/main/java/net/mcreator/dohess/init/DohessModMenus.java",
+      "src/main/java/net/mcreator/dohess/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/dohess/init/DohessModKeyMappings.java",
+      "src/main/java/net/mcreator/dohess/init/DohessModBlocks.java",
+      "src/main/java/net/mcreator/dohess/init/DohessModBlockEntities.java",
+      "src/main/java/net/mcreator/dohess/init/DohessModItems.java",
+      "src/main/java/net/mcreator/dohess/init/DohessModEntities.java",
+      "src/main/java/net/mcreator/dohess/init/DohessModEntityRenderers.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Medical",
+        "children": []
+      },
+      {
+        "name": "PD",
+        "children": [
+          {
+            "name": "PDMenu",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Manage Members",
+        "children": [
+          {
+            "name": "Squad And Rank",
+            "children": [
+              {
+                "name": "ShowButton",
+                "children": []
+              },
+              {
+                "name": "SetRank",
+                "children": []
+              },
+              {
+                "name": "General",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Cadet",
+            "children": []
+          },
+          {
+            "name": "Scouts",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Dgs",
+        "children": []
+      },
+      {
+        "name": "Knife",
+        "children": []
+      },
+      {
+        "name": "Expiremental",
+        "children": [
+          {
+            "name": "Pets",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Plushies",
+        "children": []
+      },
+      {
+        "name": "Horses",
+        "children": []
+      },
+      {
+        "name": "Mod Team",
+        "children": []
+      },
+      {
+        "name": "WOFAdd",
+        "children": [
+          {
+            "name": "GasCart",
+            "children": []
+          },
+          {
+            "name": "Blade",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Debug",
+        "children": []
+      },
+      {
+        "name": "ManageServer",
+        "children": []
+      },
+      {
+        "name": "Warps",
+        "children": []
+      },
+      {
+        "name": "Weapons",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "dohess",
+    "modName": "DOH: Essentials",
+    "version": "4.2.1",
+    "author": "Jamie Gunn, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.dohess"
+  },
+  "mcreatorVersion": 202500228610
+}

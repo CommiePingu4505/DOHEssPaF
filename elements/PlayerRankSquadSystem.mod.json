@@ -1,0 +1,1025 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 350,
+    "height": 220,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "ReturnPlayerGUIRankSquad"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": false,
+          "x": 222,
+          "y": 188,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank1"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 69,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_1",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank1"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 69,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank2"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 69,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty2",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank3"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 69,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty3",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank4"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 69,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty4",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank5"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 69,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty5",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank7"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 69,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty6",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank6"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 69,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty7",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank8"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 69,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty8",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank9"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 69,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty9",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank10"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 69,
+          "y": 188,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty10",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank20"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 132,
+          "y": 188,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty11",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank11"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 132,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty12",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank12"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 132,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty13",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank13"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 132,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty14",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank14"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 132,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty15",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank15"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 132,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty16",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank16"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 132,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty17",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank17"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 132,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty18",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank18"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 132,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty19",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetRank19"
+          },
+          "width": 63,
+          "height": 20,
+          "x": 132,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_2",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 69,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_3",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank3"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 69,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_5",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank5"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 69,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_4",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank4"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 69,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_6",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank6"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 69,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_7",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank7"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 69,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_8",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank8"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 69,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_9",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank9"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 69,
+          "y": 179,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_10",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank10"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 69,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_11",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank11"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_12",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank12"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_13",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank13"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_14",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank14"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_15",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank15"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_16",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank16"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_17",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank17"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_18",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank18"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_19",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank19"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 179,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_rank_20",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowRank20"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 197,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty20",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetSL1"
+          },
+          "width": 108,
+          "height": 20,
+          "x": 267,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty21",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetSL2"
+          },
+          "width": 108,
+          "height": 20,
+          "x": 267,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty22",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetSL3"
+          },
+          "width": 108,
+          "height": 20,
+          "x": 267,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty23",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetSL4"
+          },
+          "width": 108,
+          "height": 20,
+          "x": 267,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty24",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetSL5"
+          },
+          "width": 108,
+          "height": 20,
+          "x": 267,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty25",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetSL6"
+          },
+          "width": 108,
+          "height": 20,
+          "x": 267,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty26",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetSL7"
+          },
+          "width": 108,
+          "height": 20,
+          "x": 267,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty27",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetSL8"
+          },
+          "width": 108,
+          "height": 20,
+          "x": 267,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_govemblem24x24",
+          "image": "govemblem24x24.png",
+          "hoveredImage": "",
+          "x": 42,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tcemblem",
+          "image": "tcemblem.png",
+          "hoveredImage": "",
+          "x": 42,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_slemblem24x24",
+          "image": "slemblem24x24.png",
+          "hoveredImage": "",
+          "x": 42,
+          "y": 26,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_sl_1",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowSL1"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 267,
+          "y": 35,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ranks",
+          "text": {
+            "fixedValue": "Ranks"
+          },
+          "color": {
+            "value": -16777165,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 17,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_squads",
+          "text": {
+            "fixedValue": "Squads"
+          },
+          "color": {
+            "value": -16777165,
+            "falpha": 0.0
+          },
+          "x": 312,
+          "y": 17,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_sl_2",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowSL2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 267,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_sl_3",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowSL3"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 267,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_sl_4",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowSL4"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 267,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_sl_6",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowSL6"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 267,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_sl_5",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowSL5"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 267,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_sl_7",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowSL7"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 267,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_show_sl_8",
+          "text": {
+            "fixedValue": "",
+            "name": "ShowSL8"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 267,
+          "y": 161,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

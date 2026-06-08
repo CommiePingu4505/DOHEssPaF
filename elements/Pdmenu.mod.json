@@ -1,0 +1,10 @@
+{
+  "_fv": 79,
+  "_type": "command",
+  "definition": {
+    "commandName": "pdmenu",
+    "type": "STANDARD",
+    "permissionLevel": "No requirement",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"literal\"><field name=\"name\">openmenu</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">OpenPDMenuGUIO</field></block></statement><next><block type=\"literal\"><field name=\"name\">displayusername</field><statement name=\"args\"><block type=\"entity\"><field name=\"name\">Username</field><field name=\"type\">player</field><statement name=\"args\"><block type=\"logic\"><field name=\"name\">logic</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">TurnNameOffOn</field></block></statement></block></statement></block></statement></block></next></block></next></block></xml>"
+  }
+}

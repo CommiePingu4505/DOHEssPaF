@@ -1,0 +1,8 @@
+{
+  "_fv": 79,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"272\" y=\"209\"><field name=\"trigger\">player_log_out</field><next><block type=\"entity_execute_command\"><value name=\"command\"><block type=\"text_join\"><mutation items=\"2\"/><value name=\"ADD0\"><block type=\"text\"><field name=\"TEXT\">team remove </field></block></value><value name=\"ADD1\"><block type=\"team_get_entity_team\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></next></block></xml>",
+    "skipDependencyNullCheck": false
+  }
+}

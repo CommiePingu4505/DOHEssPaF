@@ -1,0 +1,285 @@
+package net.mcreator.dohess.world.inventory;
+
+import net.minecraftforge.items.SlotItemHandler;
+import net.minecraftforge.items.ItemStackHandler;
+import net.minecraftforge.items.IItemHandlerModifiable;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
+
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.IWorldPosCallable;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.network.PacketBuffer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.inventory.container.Slot;
+import net.minecraft.inventory.container.Container;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+
+import net.mcreator.dohess.procedures.TCIChestGUIWhileThisGUIIsOpenTickProcedure;
+import net.mcreator.dohess.init.DohessModMenus;
+
+import java.util.function.Supplier;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Collections;
+
+@Mod.EventBusSubscriber
+public class TCIChestGUIMenu extends Container implements DohessModMenus.MenuAccessor {
+	public final Map<String, Object> menuState = new HashMap<String, Object>() {
+		@Override
+		public Object put(String key, Object value) {
+			if (!this.containsKey(key) && this.size() >= 4)
+				return null;
+			return super.put(key, value);
+		}
+	};
+	public final World world;
+	public final PlayerEntity entity;
+	public int x, y, z;
+	private IWorldPosCallable access = IWorldPosCallable.DUMMY;
+	private IItemHandler internal;
+	private final Map<Integer, Slot> customSlots = new HashMap<>();
+	private boolean bound = false;
+	private Supplier<Boolean> boundItemMatcher = null;
+	private Entity boundEntity = null;
+	private TileEntity boundBlockEntity = null;
+
+	public TCIChestGUIMenu(int id, PlayerInventory inv, PacketBuffer extraData) {
+		super(DohessModMenus.TCI_CHEST_GUI.get(), id);
+		this.entity = inv.player;
+		this.world = inv.player.world;
+		this.internal = new ItemStackHandler(3);
+		BlockPos pos = null;
+		if (extraData != null) {
+			pos = extraData.readBlockPos();
+			this.x = pos.getX();
+			this.y = pos.getY();
+			this.z = pos.getZ();
+			access = IWorldPosCallable.of(world, pos);
+		}
+		if (pos != null) {
+			if (extraData.readableBytes() == 1) { // bound to item
+				byte hand = extraData.readByte();
+				ItemStack itemstack = hand == 0 ? this.entity.getHeldItemMainhand() : this.entity.getHeldItemOffhand();
+				this.boundItemMatcher = () -> itemstack == (hand == 0 ? this.entity.getHeldItemMainhand() : this.entity.getHeldItemOffhand());
+				itemstack.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					this.internal = capability;
+					this.bound = true;
+				});
+			} else if (extraData.readableBytes() > 1) { // bound to entity
+				extraData.readByte(); // drop padding
+				boundEntity = world.getEntityByID(extraData.readVarInt());
+				if (boundEntity != null)
+					boundEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						this.internal = capability;
+						this.bound = true;
+					});
+			} else { // might be bound to block
+				boundBlockEntity = this.world.getTileEntity(pos);
+				if (boundBlockEntity != null)
+					boundBlockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						this.internal = capability;
+						this.bound = true;
+					});
+			}
+		}
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 61, 44) {
+			private final int slot = 0;
+			private int x = TCIChestGUIMenu.this.x;
+			private int y = TCIChestGUIMenu.this.y;
+		}));
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 79, 44) {
+			private final int slot = 1;
+			private int x = TCIChestGUIMenu.this.x;
+			private int y = TCIChestGUIMenu.this.y;
+		}));
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 97, 44) {
+			private final int slot = 2;
+			private int x = TCIChestGUIMenu.this.x;
+			private int y = TCIChestGUIMenu.this.y;
+		}));
+		for (int si = 0; si < 3; ++si)
+			for (int sj = 0; sj < 9; ++sj)
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+		for (int si = 0; si < 9; ++si)
+			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+	}
+
+	@Override
+	public boolean canInteractWith(PlayerEntity player) {
+		if (this.bound) {
+			if (this.boundItemMatcher != null)
+				return this.boundItemMatcher.get();
+			else if (this.boundBlockEntity != null)
+				return Container.isWithinUsableDistance(this.access, player, this.boundBlockEntity.getBlockState().getBlock());
+			else if (this.boundEntity != null)
+				return this.boundEntity.isAlive();
+		}
+		return true;
+	}
+
+	@Override
+	public ItemStack transferStackInSlot(PlayerEntity playerIn, int index) {
+		ItemStack itemstack = ItemStack.EMPTY;
+		Slot slot = (Slot) this.inventorySlots.get(index);
+		if (slot != null && slot.getHasStack()) {
+			ItemStack itemstack1 = slot.getStack();
+			itemstack = itemstack1.copy();
+			if (index < 3) {
+				if (!this.mergeItemStack(itemstack1, 3, this.inventorySlots.size(), true))
+					return ItemStack.EMPTY;
+				slot.onSlotChange(itemstack1, itemstack);
+			} else if (!this.mergeItemStack(itemstack1, 0, 3, false)) {
+				if (index < 3 + 27) {
+					if (!this.mergeItemStack(itemstack1, 3 + 27, this.inventorySlots.size(), true))
+						return ItemStack.EMPTY;
+				} else {
+					if (!this.mergeItemStack(itemstack1, 3, 3 + 27, false))
+						return ItemStack.EMPTY;
+				}
+				return ItemStack.EMPTY;
+			}
+			if (itemstack1.isEmpty()) {
+				slot.putStack(ItemStack.EMPTY);
+			} else {
+				slot.onSlotChanged();
+			}
+			if (itemstack1.getCount() == itemstack.getCount()) {
+				return ItemStack.EMPTY;
+			}
+			slot.onTake(playerIn, itemstack1);
+		}
+		return itemstack;
+	}
+
+	@Override /**
+				* Merges provided ItemStack with the first avaliable one in the container/player inventor between minIndex (included) and maxIndex (excluded). Args : stack, minIndex, maxIndex, negativDirection. /!\ the Container implementation do not check if the item is valid for the slot
+				*/
+	protected boolean mergeItemStack(ItemStack stack, int startIndex, int endIndex, boolean reverseDirection) {
+		boolean flag = false;
+		int i = startIndex;
+		if (reverseDirection) {
+			i = endIndex - 1;
+		}
+		if (stack.isStackable()) {
+			while (!stack.isEmpty()) {
+				if (reverseDirection) {
+					if (i < startIndex) {
+						break;
+					}
+				} else if (i >= endIndex) {
+					break;
+				}
+				Slot slot = this.inventorySlots.get(i);
+				ItemStack itemstack = slot.getStack();
+				if (slot.isItemValid(itemstack) && !itemstack.isEmpty() && areItemsAndTagsEqual(stack, itemstack)) {
+					int j = itemstack.getCount() + stack.getCount();
+					int maxSize = Math.min(slot.getSlotStackLimit(), stack.getMaxStackSize());
+					if (j <= maxSize) {
+						stack.setCount(0);
+						itemstack.setCount(j);
+						slot.putStack(itemstack);
+						flag = true;
+					} else if (itemstack.getCount() < maxSize) {
+						stack.shrink(maxSize - itemstack.getCount());
+						itemstack.setCount(maxSize);
+						slot.putStack(itemstack);
+						flag = true;
+					}
+				}
+				if (reverseDirection) {
+					--i;
+				} else {
+					++i;
+				}
+			}
+		}
+		if (!stack.isEmpty()) {
+			if (reverseDirection) {
+				i = endIndex - 1;
+			} else {
+				i = startIndex;
+			}
+			while (true) {
+				if (reverseDirection) {
+					if (i < startIndex) {
+						break;
+					}
+				} else if (i >= endIndex) {
+					break;
+				}
+				Slot slot1 = this.inventorySlots.get(i);
+				ItemStack itemstack1 = slot1.getStack();
+				if (itemstack1.isEmpty() && slot1.isItemValid(stack)) {
+					if (stack.getCount() > slot1.getSlotStackLimit()) {
+						slot1.putStack(stack.split(slot1.getSlotStackLimit()));
+					} else {
+						slot1.putStack(stack.split(stack.getCount()));
+					}
+					slot1.onSlotChanged();
+					flag = true;
+					break;
+				}
+				if (reverseDirection) {
+					--i;
+				} else {
+					++i;
+				}
+			}
+		}
+		return flag;
+	}
+
+	@Override
+	public void onContainerClosed(PlayerEntity playerIn) {
+		super.onContainerClosed(playerIn);
+		if (!bound && playerIn instanceof ServerPlayerEntity) {
+			if (!((ServerPlayerEntity) playerIn).isAlive() || ((ServerPlayerEntity) playerIn).hasDisconnected()) {
+				for (int j = 0; j < internal.getSlots(); ++j) {
+					if (j == 0)
+						continue;
+					playerIn.dropItem(internal.getStackInSlot(j), false);
+					if (internal instanceof IItemHandlerModifiable)
+						((IItemHandlerModifiable) internal).setStackInSlot(j, ItemStack.EMPTY);
+				}
+			} else {
+				for (int i = 0; i < internal.getSlots(); ++i) {
+					if (i == 0)
+						continue;
+					playerIn.inventory.placeItemBackInInventory(playerIn.world, internal.getStackInSlot(i));
+					if (internal instanceof IItemHandlerModifiable)
+						((IItemHandlerModifiable) internal).setStackInSlot(i, ItemStack.EMPTY);
+				}
+			}
+		}
+	}
+
+	@Override
+	public Map<Integer, Slot> getSlots() {
+		return Collections.unmodifiableMap(customSlots);
+	}
+
+	@Override
+	public Map<String, Object> getMenuState() {
+		return menuState;
+	}
+
+	@SubscribeEvent
+	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		PlayerEntity entity = event.player;
+		if (event.phase == TickEvent.Phase.END && entity.openContainer instanceof TCIChestGUIMenu) {
+			World world = ((TCIChestGUIMenu) entity.openContainer).world;
+			double x = ((TCIChestGUIMenu) entity.openContainer).x;
+			double y = ((TCIChestGUIMenu) entity.openContainer).y;
+			double z = ((TCIChestGUIMenu) entity.openContainer).z;
+			TCIChestGUIWhileThisGUIIsOpenTickProcedure.execute(world, entity);
+		}
+	}
+}

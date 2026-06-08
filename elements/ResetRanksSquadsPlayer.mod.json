@@ -1,0 +1,8 @@
+{
+  "_fv": 79,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"158\" y=\"224\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"variables_set_string\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"true\" has_entity=\"true\"></mutation><field name=\"VAR\">global:MCPlayerRank</field><value name=\"VAL\"><block type=\"text\"><field name=\"TEXT\">{\"text\":\"] | \",\"color\":\"#6E6E6E\"},{\"text\":\"No Rank. \",\"color\":\"#D5D5D5\"}]</field></block></value><value name=\"entity\"><block type=\"get_command_parameter_entity\"><field name=\"param\">username</field></block></value><next><block type=\"variables_set_string\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"true\" has_entity=\"true\"></mutation><field name=\"VAR\">global:MCPlayerSquad</field><value name=\"VAL\"><block type=\"text\"><field name=\"TEXT\">[{\"text\":\"[\",\"color\":\"#6E6E6E\"},{\"text\":\"No Squad\",\"color\":\"#D5D5D5\"},</field></block></value><value name=\"entity\"><block type=\"get_command_parameter_entity\"><field name=\"param\">username</field></block></value><next><block type=\"variables_set_string\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"true\" has_entity=\"true\"></mutation><field name=\"VAR\">global:MCPlayerColour</field><value name=\"VAL\"><block type=\"text\"><field name=\"TEXT\">white</field></block></value><value name=\"entity\"><block type=\"get_command_parameter_entity\"><field name=\"param\">username</field></block></value></block></next></block></next></block></next></block></xml>",
+    "skipDependencyNullCheck": false
+  }
+}

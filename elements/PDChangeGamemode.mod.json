@@ -1,0 +1,8 @@
+{
+  "_fv": 79,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"224\" y=\"187\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"controls_if\"><mutation elseif=\"2\"/><value name=\"IF0\"><block type=\"entity_checkgamemode\"><field name=\"gamemode\">SURVIVAL</field><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value><statement name=\"DO0\"><block type=\"entity_set_gamemode\"><field name=\"gamemode\">CREATIVE</field><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></statement><value name=\"IF1\"><block type=\"entity_checkgamemode\"><field name=\"gamemode\">CREATIVE</field><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value><statement name=\"DO1\"><block type=\"entity_set_gamemode\"><field name=\"gamemode\">SPECTATOR</field><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></statement><value name=\"IF2\"><block type=\"entity_checkgamemode\"><field name=\"gamemode\">SPECTATOR</field><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></value><statement name=\"DO2\"><block type=\"entity_set_gamemode\"><field name=\"gamemode\">SURVIVAL</field><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></statement></block></next></block></xml>",
+    "skipDependencyNullCheck": false
+  }
+}
